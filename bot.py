@@ -31,6 +31,7 @@ async def on_message(message):
                 await message.channel.send(embed=embed)
             else:
                 rsp = requests.get("https://corona.lmao.ninja/countries/" + country)
+                print(rsp.json())
                 # timestamp = rsp.json()["updated"]
                 # updated = datetime.fromtimestamp(timestamp)
                 embed = discord.Embed(title="COVID-19 Stats for " + str(rsp.json()["country"]))
