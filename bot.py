@@ -30,7 +30,7 @@ async def on_message(message):
                 # embed.add_field(name="Last Update", value=updated, inline=False)
                 await message.channel.send(embed=embed)
             else:
-                rsp = requests.get("https://corona.lmao.ninja/countries/" + country)
+                rsp = requests.get("https://corona.lmao.ninja/v2/countries/" + country)
                 print(rsp.json())
                 # timestamp = rsp.json()["updated"]
                 # updated = datetime.fromtimestamp(timestamp)
