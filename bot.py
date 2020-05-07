@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 load_dotenv()
-TOKEN = "Njk0MjUyODE4MjAyMjMwNzg0.XoI-Mg.7yNRFrJkRTHdIfzd2BVpTEcAQsc"
+TOKEN = "TOKEN HERE"
 
 client = discord.Client()
 
